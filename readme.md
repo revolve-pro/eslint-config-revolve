@@ -11,7 +11,7 @@ Owner: **Artur Wojnar** (<artur.wojnar@revolve.pro>)
 1. Install `eslint-config-revolve` package
 2. Edit `.eslintrc.js`
 
-For browser projects:
+For generic **browser**:
 
 ```JavaScript
 module.exports = {
@@ -22,7 +22,30 @@ module.exports = {
 };
 ```
 
-For node projects (experimental):
+When using **React**:
+
+```JavaScript
+module.exports = {
+  root: true,
+  extends: [
+    'revolve/react'
+  ]
+};
+```
+
+When using **node** in **browser** projects add the following key:
+
+```JavaScript
+module.exports = {
+  //...
+  env: {
+    node: true
+  }
+  //...
+};
+```
+
+For **node-only** projects (includes `prefer-await` rules):
 
 ```JavaScript
 module.exports = {
@@ -33,4 +56,4 @@ module.exports = {
 };
 ```
 
-To see details look at the `index.js`. Commented rules are defined in `eslint:recommended`.
+To see details look at the `lib/default.js` and `lib/react.js`. Commented rules are defined in `eslint:recommended`.

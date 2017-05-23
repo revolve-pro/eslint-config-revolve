@@ -1,4 +1,4 @@
 module.exports = {
-  extends: "./index.js",
-  plugins: ["react", "promise"]
+  extends: './browser.js',
+  plugins: ['react', 'promise']
 };
