@@ -1,5 +1,5 @@
 module.exports = {
-  'exxtends': [
+  'extends': [
     './lib/default.js'
   ],
   'env': {
