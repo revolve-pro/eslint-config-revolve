@@ -9,6 +9,12 @@ module.exports = {
   'plugins': [
     'react'
   ],
+  'parserOptions': {
+    'sourceType': 'module'
+  },
+  'ecmaFeatures': {
+    'jsx': true,
+  },
   'rules': {
     /* React */
     'jsx-quotes': [2, 'prefer-double'],
