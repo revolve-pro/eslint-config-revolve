@@ -29,5 +29,10 @@
     "eslint": "^3.19.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.0.1"
+  },
+  "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.0.1"
   }
 }
