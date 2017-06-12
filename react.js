@@ -35,7 +35,7 @@ module.exports = {
     'react/react-in-jsx-scope': 2,
     'react/self-closing-comp': 2,
     'react/sort-comp': 2,
-    'react/wrap-multilines': 2,
+    'react/jsx-wrap-multilines': 2,
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
     'react/jsx-closing-bracket-location': 'error',
