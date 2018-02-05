@@ -38,7 +38,7 @@ module.exports = {
     'react/jsx-wrap-multilines': 2,
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
-    'react/jsx-closing-bracket-location': ['error', 2, { 'ignoredNodes': ['JSXElement *'] }],
+    'react/jsx-closing-bracket-location': ['error', 2, { 'selfClosing': 'line-aligned', nonEmpty: 'after-props' }],
     'react/jsx-curly-spacing': ['error'],
     'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'multiline' }],
@@ -48,4 +48,4 @@ module.exports = {
       'afterOpening': 'never'
     }]
   }
-}
+};
