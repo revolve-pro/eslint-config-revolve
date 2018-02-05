@@ -36,9 +36,12 @@ module.exports = {
     'react/self-closing-comp': 2,
     'react/sort-comp': 2,
     'react/jsx-wrap-multilines': 2,
-    'react/jsx-indent': ['error', 2],
+    'react/jsx-indent': 0,
     'react/jsx-indent-props': ['error', 2],
-    'react/jsx-closing-bracket-location': 'error',
+    'react/jsx-closing-bracket-location': [2, {
+      'nonEmpty': 'line-aligned',
+      'selfClosing': 'tag-aligned'
+    }],
     'react/jsx-curly-spacing': ['error'],
     'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-max-props-per-line': ['error', { 'maximum': 1, 'when': 'multiline' }],
@@ -48,4 +51,4 @@ module.exports = {
       'afterOpening': 'never'
     }]
   }
-}
+};
