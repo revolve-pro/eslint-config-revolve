@@ -10,10 +10,11 @@ module.exports = {
     'react'
   ],
   'parserOptions': {
-    'sourceType': 'module'
-  },
-  'ecmaFeatures': {
-    'jsx': true,
+    'ecmaVersion': 7,
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      'jsx': true
+    }
   },
   'rules': {
     /* React */
