@@ -1,13 +1,8 @@
+'use strict';
+
 module.exports = {
-  'extends': [
-    './lib/default.js'
-  ],
-  'env': {
-    'browser': true,
-    'es6': true
+  extends: ['./lib/default.js', 'plugin:jsx-a11y/recommended'],
+  env: {
+    browser: true,
   },
-  'parserOptions': {
-    'ecmaVersion': 2018,
-    'sourceType': 'module'
-  },
-}
+};

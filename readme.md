@@ -1,15 +1,29 @@
 # eslint-config-revolve
 
---------------------------------------------------------------------------------
+---
 
 Owner: **Artur Wojnar** (<artur.wojnar@revolve.pro>)
 
---------------------------------------------------------------------------------
+---
 
-## Usage
+## Installation
 
+Run `npm install git+ssh://git@bitbucket.org/revolve-it/eslint-config-revolve.git --save`
+
+## Usage: Prettier
+
+- Copy `prettierrc.js` file into your project's root directory.
+- Adjust settings if necessary (e.g. 'semi' or 'printWidth').
+- Install prettier (`npm install --save-dev prettier`)
+- Run `$(npm bin)/prettier . --write` to apply changes to whole project
+- Configure IDE to use prettier as default formatter
+- Configure IDE to use format files on save
+
+## Usage: Eslint
+
+1. Install `eslint`
 1. Install `eslint-config-revolve` package
-2. Edit `.eslintrc.js`
+1. Create `.eslintrc.js`
 
 For generic **browser**:
 
@@ -29,6 +43,17 @@ module.exports = {
   root: true,
   extends: [
     'revolve/react'
+  ]
+};
+```
+
+When using **React Native**:
+
+```JavaScript
+module.exports = {
+  root: true,
+  extends: [
+    'revolve/react-native'
   ]
 };
 ```
@@ -54,6 +79,26 @@ module.exports = {
     'revolve/node'
   ]
 };
+```
+
+When using **Typescript**:
+Requires Eslint > 7.0.0 !
+add to eslintrc.js:
+
+```JS
+  // ...
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2019,
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'],
+  },
+  plugins: ['@typescript-eslint'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+  ],
+  // ...
 ```
 
 To see details look at the `lib/default.js` and `lib/react.js`. Commented rules are defined in `eslint:recommended`.
