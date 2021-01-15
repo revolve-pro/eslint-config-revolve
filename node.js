@@ -1,13 +1,11 @@
+'use strict';
+
 module.exports = {
-  'extends': [
-    './lib/default.js'
-  ],
-  'env': {
-    'es6': true,
-    'node': true
+  extends: ['./lib/default.js', 'plugin:node/recommended'],
+  parserOptions: {
+    ecmaVersion: 2020,
   },
-  'rules': {
-    'promise/prefer-await-to-then': 2,
-    'promise/prefer-await-to-callbacks': 2
-  }
-}
+  env: {
+    node: true,
+  },
+};

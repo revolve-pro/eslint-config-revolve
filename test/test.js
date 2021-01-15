@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 'use strict';
 
 const assert = require('assert');
@@ -7,34 +8,47 @@ const confNode = require('../node');
 
 // The source files to lint.
 const repoFiles = [
-  '../lib/default',
-  '../react',
-  '../browser',
-  '../node',
-  './test'
+  './lib/default.js',
+  './react.js',
+  './browser.js',
+  './node.js',
+  './test/test.js',
 ];
 
 // Use the rules defined in this repo to test against.
-const eslintOptsBrowser = {
-  envs: ['browser', 'es6'],
+const reactOpts = {
   useEslintrc: false,
-  rules: confBrowser.rules,
-  plugins: ['react', 'promise']
+  overrideConfig: {
+    env: { browser: true, es2020: true },
+    rules: confBrowser,
+  },
 };
+
 const eslintOptsNode = {
-  envs: ['node', 'es6'],
   useEslintrc: false,
-  rules: confNode.rules,
-  plugins: ['promise']
+  overrideConfig: {
+    plugins: ['promise'],
+    env: { node: true, es2020: true },
+    rules: confNode.rules,
+  },
 };
 
-// Runs the linter on the repo files and asserts no errors were found.
-const reportBrowser = new eslint.CLIEngine(eslintOptsBrowser).executeOnFiles(repoFiles);
-console.log(JSON.stringify(reportBrowser))
-assert.equal(reportBrowser.errorCount, 0);
-assert.equal(reportBrowser.warningCount, 0);
+async function test(name, opts, files) {
+  // Runs the linter on the repo files and asserts no errors were found.
+  const report = await new eslint.ESLint(opts).lintFiles(files);
+  const errors = report.filter((a) => a.errorCount > 0);
+  const warnings = report.filter((a) => a.warningCount > 0);
 
-const reportNode = new eslint.CLIEngine(eslintOptsNode).executeOnFiles(repoFiles);
-console.log(JSON.stringify(reportNode))
-assert.equal(reportNode.errorCount, 0);
-assert.equal(reportNode.warningCount, 0);
+  if (errors.length > 0) {
+    errors.forEach((e) => console.log(e.messages));
+    assert.fail(`[${name}] found ${errors.length} errors`);
+  }
+
+  if (warnings.length > 0) {
+    warnings.forEach((e) => console.log(e.messages));
+    assert.fail(`[${name}] found ${warnings.length} warnings`);
+  }
+}
+
+test('react', reactOpts, repoFiles);
+test('node', eslintOptsNode, repoFiles);
