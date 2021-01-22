@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: ['./lib/default.js', 'plugin:jsx-a11y/recommended'],
+  extends: ['./lib/default.js'],
   env: {
     browser: true,
   },

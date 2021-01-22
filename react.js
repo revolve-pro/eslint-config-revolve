@@ -17,6 +17,7 @@ module.exports = {
     },
   },
   rules: {
+    'jsx-a11y/no-onchange': 0,
     'react/no-did-mount-set-state': 2,
     'react/no-did-update-set-state': 2,
     'react/no-unknown-property': [2, { ignore: ['class', 'for'] }],
