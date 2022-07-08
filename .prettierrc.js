@@ -11,7 +11,7 @@ module.exports = {
   bracketSpacing: true,
   embeddedLanguageFormatting: 'auto',
   endOfLine: 'lf',
-  jsxBracketSameLine: false,
+  bracketSameLine: false,
   jsxSingleQuote: false,
   singleQuote: true,
   overrides: [

@@ -100,5 +100,3 @@ add to eslintrc.js:
   ],
   // ...
 ```
-
-To see details look at the `lib/default.js` and `lib/react.js`. Commented rules are defined in `eslint:recommended`.
