@@ -8,7 +8,7 @@ Owner: **Artur Wojnar** (<artur.wojnar@revolve.pro>)
 
 ## Installation
 
-Run `npm install git+ssh://git@bitbucket.org/revolve-it/eslint-config-revolve.git --save`
+Run `npm install git+ssh://git@github.com/revolve-pro/eslint-config-revolve.git#semver:^3.0.0 --save`
 
 ## Usage: Prettier
 
