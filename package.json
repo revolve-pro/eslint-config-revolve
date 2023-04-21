@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/revolve-it/eslint-config-revolve.git"
+    "url": "git+https://github.com/revolve-pro/eslint-config-revolve.git"
   },
   "keywords": [
     "eslint",
