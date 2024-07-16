@@ -2,7 +2,7 @@
 
 // @TODO: this one needs more work
 module.exports = {
-  extends: ['@react-native-community', './react.js'],
+  extends: ['@react-native', './react.js'],
   plugins: ['react-native'],
   parserOptions: {
     ecmaFeatures: {
