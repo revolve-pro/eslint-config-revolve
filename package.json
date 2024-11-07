@@ -1,10 +1,12 @@
 {
   "name": "eslint-config-revolve",
-  "version": "4.0.0",
-  "description": "Default and common configuration for eslint.",
-  "main": "index.js",
+  "author": "Revolve Healthcare sp. z o.o.",
+  "version": "5.0.0",
+  "type": "module",
+  "description": "Default and common configurations for eslint.",
+  "main": "index.mjs",
   "engines": {
-    "node": ">=14.0.0"
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
   },
   "scripts": {
     "lint": "eslint ."
@@ -14,24 +16,30 @@
     "url": "git+https://github.com/revolve-pro/eslint-config-revolve.git"
   },
   "keywords": [
-    "eslint",
     "revolve",
-    "quality",
-    "conf",
     "lint",
-    "style"
+    "javascript",
+    "eslint",
+    "eslint-config",
+    "eslint-prettier",
+    "prettier",
+    "node",
+    "nodejs",
+    "ecmascript"
   ],
-  "author": "Artur Wojnar",
   "license": "ISC",
   "homepage": "https://bitbucket.org/revolve-it/eslint-config-revolve#readme",
   "dependencies": {
-    "eslint": "^8.19.0",
+    "@eslint/compat": "^1.2.2",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.14.0",
+    "eslint": "^9.14.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.4.0",
-    "eslint-plugin-react": "^7.34.4",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-native": "^4.1.0"
+    "eslint-plugin-n": "^17.13.0",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "globals": "^15.12.0"
   },
   "devDependencies": {
     "prettier": "^3.3.3"
