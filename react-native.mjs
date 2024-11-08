@@ -27,6 +27,18 @@ export default [
         version: "detect",
       },
     },
+    rules: {
+      "no-console": 1,
+      "react-native/no-unused-styles": 1,
+      "react-native/split-platform-components": 2,
+      "react-native/no-inline-styles": 2,
+      "react-native/no-single-element-style-arrays": 2,
+      "react-native/no-color-literals": 1,
+      "no-void": 0,
+      "@typescript-eslint/no-misused-promises": [
+        "error",
+        { checksVoidReturn: { attributes: false } },
+      ],
+    }
   },
-  { ignores: ["eslint.config.js"] },
 ]
