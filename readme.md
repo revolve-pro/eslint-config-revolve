@@ -3,6 +3,7 @@
 ---
 
 Owner: **Revolve Healthcare sp. z o.o.** (<https://revolve.healthcare/>)
+
 Maintainer: **Przemysław Nowak** (<przemek.nowak@revolve.pro>)
 
 ---
@@ -10,10 +11,10 @@ Maintainer: **Przemysław Nowak** (<przemek.nowak@revolve.pro>)
 ## React Native & Expo
 
 For React Native I recommend using version **v4.0.0** (look at section below - .eslintrc)
-While version **v5.0.0** supports react-native, it's experimental due to lack of support for plugins and configs. (Most of them are unmaintained)
-Expo does not have support for flat config at the time of writing (07.11.2024), once it updates you can use **v5.0.0** instead.
+While version **v5.1.0** supports react-native, it's experimental due to lack of support for plugins and configs. (Most of them are unmaintained)
+Expo does not have support for flat config at the time of writing (07.11.2024), once it updates you can use **v5.1.0** instead.
 
-**Why use v5.0.0?** [Version support policy and ESLint v8.x end of life](https://eslint.org/blog/2024/09/eslint-v8-eol-version-support/) (EoL: October 5, 2024)
+**Why use v5.1.0?** [Version support policy and ESLint v8.x end of life](https://eslint.org/blog/2024/09/eslint-v8-eol-version-support/) (EoL: October 5, 2024)
 
 ## Usage: Prettier
 
@@ -29,7 +30,7 @@ Expo does not have support for flat config at the time of writing (07.11.2024), 
 ## Installation (eslint.config.js; eslint >= 9.0.0)
 > Recommended for React and Node projects (Look below for RN and Expo)
 
-Run `npm install git+ssh://git@github.com/revolve-pro/eslint-config-revolve.git#semver:^5.0.0 --save`
+Run `npm install git+ssh://git@github.com/revolve-pro/eslint-config-revolve.git#semver:^5.1.0 --save`
 
 ## Usage: Eslint
 
