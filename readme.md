@@ -30,7 +30,7 @@ Expo does not have support for flat config at the time of writing (07.11.2024), 
 ## Installation (eslint.config.js; eslint >= 9.0.0)
 > Recommended for React and Node projects (Look below for RN and Expo)
 
-Run `npm install git+ssh://git@github.com/revolve-pro/eslint-config-revolve.git#semver:^5.1.0 --save`
+Run `npm install git+ssh://git@github.com/revolve-pro/eslint-config-revolve.git#semver:^5.1.0 --save-dev`
 
 ## Usage: Eslint
 
@@ -126,7 +126,7 @@ export default tsEslint.config(
 
 > recommended for React Native and Expo
 
-Run `npm install git+ssh://git@github.com/revolve-pro/eslint-config-revolve.git#semver:^4.0.0 --save` (or older)
+Run `npm install git+ssh://git@github.com/revolve-pro/eslint-config-revolve.git#semver:^4.0.0 --save-dev` (or older)
 
 ## Usage: Eslint
 
