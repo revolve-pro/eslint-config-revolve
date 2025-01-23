@@ -3,7 +3,7 @@
   "description": "Default and common configurations for eslint.",
   "author": "Revolve Healthcare sp. z o.o.",
   "license": "ISC",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "homepage": "https://bitbucket.org/revolve-it/eslint-config-revolve#readme",
   "engines": {
     "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
@@ -30,8 +30,8 @@
     "ecmascript"
   ],
   "dependencies": {
-    "@babel/eslint-parser": "^7.25.9",
-    "@eslint/compat": "^1.2.2",
+    "@babel/eslint-parser": "^7.26.5",
+    "@eslint/compat": "^1.2.5",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.14.0",
     "eslint-config-prettier": "^9.1.0",
@@ -42,12 +42,12 @@
     "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-native": "^4.1.0",
+    "eslint-plugin-react-native": "^5.0.0",
     "globals": "^15.12.0",
     "typescript-eslint": "^8.13.0"
   },
   "devDependencies": {
-    "eslint": "^9.14.0",
+    "eslint": "^9.18",
     "prettier": "^3.3.3"
   }
 }
